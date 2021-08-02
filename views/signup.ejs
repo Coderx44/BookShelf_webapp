@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+</html>
+    <html>
+        <head>
+            <title>Login Page</title>
+            <link rel="stylesheet" type="text/css" href="/assests/stylesheet.css">
+        </head>
+        <body>
+            <div class="back">
+                <div class="form-box">
+                <form id='sign' method="POST" action="/signup/signin">
+                    <p>SIGN UP HERE</p>
+                    <% if(user[0]==true){ %>
+                    <p>The email already exits </p>
+                    <li><a href="/contact">LOGIN</a></li>
+            <% } %>
+            <% if( user[1]==true){ %>
+                <p>Password don't match </p>
+                
+        <% } %>
+                    <input type="text" class="input-signin" placeholder="First Name" name="fname" required>
+                    <input type="text" class="input-signin" placeholder="Last Name" name="lname" required>
+                    <input type="text" class="input-signin" placeholder="Enter Emaiil ID" name="email" required>
+                    <input type="password" class="input-signin" placeholder="Enter Password" name='password' required><br>
+                    <input type="password" class="input-signin" placeholder="Confirm Password" name='password2' required><br>
+                    <!-- <label for="image">Upload Image</label>
+                <input type="file" class="input"  name="image" ><br> -->
+                    <button class="signup-btn" >Sign in</button>
+                </form>
+                </div>
+            </div>
+        </body>
+        </html>

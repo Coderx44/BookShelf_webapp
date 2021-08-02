@@ -1,0 +1,105 @@
+/* stylesheet for login page */
+*
+{
+    font-family: Times;
+}
+.background
+{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: url(book.jpg);
+  
+}
+.box
+{
+    height: 380px;
+    width: 400px;
+    margin: 6% auto;
+    padding: 5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.108),rgb(14, 14, 15));
+    position: relative;
+    color: white;
+}
+.button
+{
+    margin: 10%;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    position: relative;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    transition: .05s;
+    border-radius: 43%;
+
+}
+.input
+{
+    width: 100%;
+    padding:10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid#999;
+    outline: none;
+    background: transparent;
+
+}
+.btn
+{
+    padding: 5px;
+    margin: 0% 0;
+    background-color: white;
+    outline: none;
+    border-radius: 40px;
+}
+.head
+{
+    font-family: sans-serif;
+}
+
+/* stylesheet for signup page */
+
+.back
+{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: url(book.jpg);
+  
+}
+.form-box
+{
+    height: 380px;
+    width: 400px;
+    margin: 6% auto;
+    padding: 5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.108),rgb(14, 14, 15));
+    position: relative;
+    color: white;
+}
+.input-signin
+{
+    width: 100%;
+    padding:10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid#999;
+    outline: none;
+    background: transparent;
+}
+.sign
+{
+    margin: 2% 0;
+    padding: 5px;
+    background: white;
+    border-radius: 35%;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+           body{background:skyblue;
+           font-family: verdana;
+           color:#fff;
+           padding: 30px;}
+        </style> 
+    </head>
+    <body>
+    <%- include('partial/nav') -%>
+        <h1>
+            welcome to the website of <%= item.email %> 
+        </h1>
+        <h2>
+            HObbies
+        </h2>
+        <ul>
+           
+                <% if(typeof(item.image.data)==="object"){%>
+                    <div>
+                        <img src="data:<%=item.image.contentType%>;base64,
+                        <%=item.image.data.toString('base64')%>">
+                    </div>
+               
+                <% } %>
+        </ul>
+        <p>you wont find a website</p>
+    </body>
+</html>

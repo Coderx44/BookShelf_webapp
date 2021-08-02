@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+</html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/assests/stylesheet.css">
+</head>
+
+<body>
+    <%- include('partial/nav') %>
+        <div class="background">
+            <div class="box">
+                <p>
+                <h2>LOGIN HERE</h2>
+                </p>
+                <form id='contact' method="POST" action="/contact/login">
+                    <input type="text" class="input" placeholder="EmailID" name="email" required><br>
+                    <input id="password" type="password" class="input" placeholder="Password" name='password'
+                        required><br>
+                    <input type="checkbox" id="checkbox" onclick="myFunction1()">
+                    <p>Don't have an account <a onclick="func()" href="/signup">Register Now</a></p>
+                    <button class="btn" onclick="func()">LOGIN</button>
+                </form>
+                <a onclick="func()" href="/contact/forgot">Forgot password?</a>
+                <form id='google' method="GET" action="/google">
+                    <button class="btn">google</button>
+                </form>
+            </div>
+            <a href="/">page</a></li>
+        </div>
+        <div>
+
+        </div>
+        <script>
+
+            async function  myFunction1() {
+      
+
+
+
+                var pass = document.getElementById("password");
+                var checkbox = document.getElementById("checkbox").checked;
+
+                if (checkbox) {
+                    pass.type = "text";
+                } else {
+                    pass.type = "password";
+                }
+
+            }
+            function func() {
+                document.getElementById("checkbox").checked = false;
+                
+            }
+
+
+
+        </script>
+</body>
+
+</html>
+
+
